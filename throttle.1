@@ -1,0 +1,45 @@
+.\" Process this file with
+.\" groff -man -Tascii throttle.1
+.\"
+.TH THROTTLE 1 "JULY 2004" "User Manuals"
+.SH NAME
+throttle \- bandwidth limiting pipe
+.SH SYNOPSIS
+.B throttle
+.B [\-V]
+.B [\-s
+.I blocksize
+.B ]
+.B [\-w
+.I window
+.B ]
+.B [\-bkmBKM]
+.I limit
+.SH DESCRIPTION
+.B throttle
+copies the standard input to the standard output while limiting
+bandwidth to the specified maximum.
+.SH OPTIONS
+.IP limit
+The bandwidth limit in bits, kilobits, megabits, bytes, kilobytes
+or megabytes per second depending on the options
+.IR \-bkmBKM .
+.IP "\-b, \-k, \-m"
+Set the limit unit to bits, kilobits, or megabits per second.
+.IP "\-B, \-K, \-M"
+Set the limit unit to bytes, kilobytes, or megabytes per second.
+.IP "\-s blocksize"
+Set the I/O block size to blocksize bytes. Initially the block size is 512.
+.IP "\-w window"
+Window of time in seconds used for limit calculation. Initially the window is 60 seconds.
+.IP \-V
+Print the version number and copyright and exit.
+.IP \-h
+Display help and exit.
+.SH BUGS
+Specifying a bandwidth limit greater than the rate of incoming data
+will not increase the speed of the pipeline.
+.SH AUTHOR
+James Klicman <james at klicman dot org>
+.SH "SEE ALSO"
+.BR dd (1)

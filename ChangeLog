@@ -1,3 +1,13 @@
+
+2004-07-09  James Klicman <james@klicman.org> 1.1
+
+	* Improved portability
+	* Added nanosleep support
+	* Improved throttle algorithm
+	* Corrected minor documentation typo
+	* Created RPM spec file
+
 2003-01-18  James Klicman <james@klicman.org> 1.0
 
 	* Initial Release
+
