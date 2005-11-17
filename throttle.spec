@@ -1,12 +1,12 @@
 Name: throttle
 Summary: bandwidth limiting pipe
-Version: 1.1
+Version: 1.2
 Release: 1
 URL: http://klicman.org/throttle/
 Source: http://klicman.org/throttle/throttle-%{version}.tar.gz
 Vendor: James Klicman
 Packager: James Klicman <james@klicman.org>
-License: GPL
+License: GPL v2
 Group: Applications/File
 BuildRoot: %{_builddir}/%{name}-root
 
@@ -38,5 +38,8 @@ rm -rf %{_builddir}/%{name}-%{version}
 
 
 %changelog
+* Thu Nov 17 2005 James Klicman <james@klicman.org> 1.2-1
+- Updated version number, see ChangeLog for details
+
 * Thu Jul 08 2004 James Klicman <james@klicman.org> 1.1-1
 - Initial spec file

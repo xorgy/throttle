@@ -1,4 +1,15 @@
 
+2005-11-17  James Klicman <james@klicman.org> 1.2
+
+	* Improved portability
+	* Added clock_gettime support
+	* Minimum sleep calibration
+	* Improved sub-second sleep functions
+	* Dynamic option controls
+	* Periodic statistics messages
+	* 64-bit counters
+	* Updated RPM spec file
+
 2004-07-09  James Klicman <james@klicman.org> 1.1
 
 	* Improved portability
